@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERTEX | Men's Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">VERTEX</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Collection</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon"><i class="fas fa-search"></i></button>
+                <button class="btn-icon cart"><i class="fas fa-shopping-bag"></i><span>2</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="tag">New Season 2026</span>
+                <h1 class="main-title">WEAR YOUR<br><span class="highlight">CONFIDENCE</span></h1>
+                <p class="desc">Premium fabrics, timeless designs, and modern fits for the contemporary man.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Shop Collection</a>
+                    <a href="#" class="btn btn-ghost">Lookbook <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=900&fit=crop" alt="Fashion Model">
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats-strip">
+        <div class="stat-item">
+            <h3 class="counter" data-target="150">0</h3>
+            <p>Brands</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="2500">0</h3>
+            <p>Products</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="50">0</h3>
+            <p>Countries</p>
+        </div>
+    </section>
+
+    <!-- LATEST PRODUCTS -->
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Products</h2>
+                <p>Fresh arrivals to elevate your style</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&q=80" alt="Shirt">
+                        <div class="overlay"><button class="add-btn"><i class="fas fa-plus"></i></button></div>
+                        <span class="badge new">New</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="cat">Shirts</span>
+                        <h4>Premium Oxford</h4>
+                        <p class="price">$89.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80" alt="Blazer">
+                        <div class="overlay"><button class="add-btn"><i class="fas fa-plus"></i></button></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="cat">Outerwear</span>
+                        <h4>Wool Blazer</h4>
+                        <p class="price">$245.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500&q=80" alt="Pants">
+                        <div class="overlay"><button class="add-btn"><i class="fas fa-plus"></i></button></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="cat">Pants</span>
+                        <h4>Slim Chinos</h4>
+                        <p class="price">$75.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80" alt="Jacket">
+                        <div class="overlay"><button class="add-btn"><i class="fas fa-plus"></i></button></div>
+                        <span class="badge hot">Hot</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="cat">Jackets</span>
+                        <h4>Leather Biker</h4>
+                        <p class="price">$389.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section categories-section" id="categories">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Shop by Category</h2>
+                <p>Find your perfect style</p>
+            </div>
+            <div class="categories-grid">
+                <div class="cat-card large">
+                    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80" alt="Formal">
+                    <div class="cat-overlay">
+                        <h3>Formal Wear</h3>
+                        <div class="line-divider"></div>
+                        <a href="#" class="link-btn">Explore</a>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80" alt="Casual">
+                    <div class="cat-overlay">
+                        <h3>Casual</h3>
+                        <div class="line-divider"></div>
+                        <a href="#" class="link-btn">Explore</a>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?w=600&q=80" alt="Street">
+                    <div class="cat-overlay">
+                        <h3>Streetwear</h3>
+                        <div class="line-divider"></div>
+                        <a href="#" class="link-btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2>Contact Us</h2>
+                    <p>Have a question about sizing or need style advice? We're here to help.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Fashion Street, India, 600028</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>support@vertex.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>VERTEX</h2>
+                <p>Premium men's fashion for the modern world.</p>
+            </div>
+            
+            <!-- Added Contact Column Here -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, India</li>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> support@vertex.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VERTEX. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

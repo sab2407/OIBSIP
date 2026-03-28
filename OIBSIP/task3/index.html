@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Temp<span>Convert</span></h1>
+            <p>Precision conversion for Celsius, Fahrenheit, and Kelvin</p>
+        </div>
+
+        <div class="converter-card">
+            <div class="input-group">
+                <label for="temperature">Temperature</label>
+                <input type="number" id="temperature" placeholder="Enter value" step="any">
+                <span id="error-msg">Please enter a valid number</span>
+            </div>
+
+            <div class="selection-group">
+                <div class="select-wrapper">
+                    <label for="input-unit">From</label>
+                    <select id="input-unit">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <div class="swap-icon" id="swap-btn" title="Swap Units">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"/>
+                    </svg>
+                </div>
+
+                <div class="select-wrapper">
+                    <label for="output-unit">To</label>
+                    <select id="output-unit">
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convert-btn" class="convert-btn">Convert</button>
+
+            <div id="result-box" class="result-box hidden">
+                <span class="result-label">Result</span>
+                <div class="result-value" id="result-display">--</div>
+            </div>
+        </div>
+
+        <div class="bg-glow"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

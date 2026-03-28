@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabareesh Sivakumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Sabareesh</div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero" class="hero">
+    <img src="imagetask2/profile.jpeg" alt="Sabareesh Profile" class="profile-img">
+    <h1>Sabareesh Sivakumar</h1>
+    <p>Passionate Web Developer & AI Enthusiast. Building sleek, responsive applications with modern UI and solid backend architecture.</p>
+    <div class="hero-buttons">
+      <a href="resume.pdf" class="btn" target="_blank"> Resume</a>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a second-year B.E. Computer Science student specializing in AI, web development, and software engineering. I focus on creating professional, responsive web experiences and solving problems with clean code. My mission is to produce high-impact projects while continuously learning through real work.</p>
+  </section>
+
+  <section id="experience" class="experience journey">
+    <h2>Journey</h2>
+    <div class="journey-container">
+      <div class="journey-box">
+        <div class="journey-step">01</div>
+        <h3>Started B.E. (CSE)</h3>
+        <p>Enrolled in Computer Science and Engineering with a focus on AI & ML domain, building strong foundations in algorithms and programming.</p>
+        <small>2024</small>
+      </div>
+      <div class="journey-box">
+        <div class="journey-step">02</div>
+        <h3>completing courses</h3>
+        <p>get to explore some courses and knowing about them to enhance my skills.</p>
+        <small>2024 - 2025</small>
+      </div>
+      <div class="journey-box">
+        <div class="journey-step">03</div>
+        <h3>Internship at Oasis Infobyte</h3>
+        <p>Developed full-stack web applications, participated in code reviews, and delivered production-ready features.</p>
+        <small>2026 - Present</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p class="section-subtitle">Technologies and tools I excel with</p>
+    <div class="skill-cards">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">React</div>
+      <div class="card">Node.js</div>
+      <div class="card">SQL</div>
+      <div class="card">Git</div>
+      <div class="card">Data Structures & Algorithms</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div onclick="openProject('E-commerce Landing Page','A modern e-commerce landing page with responsive UI.', 'HTML, CSS, JavaScript', 'https://github.com/sabareesh/project1')" class="project-card">
+        <h3>E-commerce Landing Page</h3>
+        <p>Interactive and responsive E-commerce website.</p>
+      </div>
+      <div onclick="openProject('Quiz Game App','Python quiz game with scoring and questions data layer.', 'Python, Flask', 'https://github.com/sabareesh/project2')" class="project-card">
+        <h3>Quiz Game</h3>
+        <p>Interactive quiz application built with Python.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="certification-cards">
+      <div class="card"><a href="imagetask2/knimbus certificate.png" target="_blank">Knimbus for academia - Knimbus</a></div>
+      <div class="card"><a href="#">Enhancing Softskills - NPTEL</a></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-icons">
+      <a href="mailto:sabareeshsivakumar88@gmail.com" class="icon"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/sab2407" target="_blank" class="icon"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/sabareesh-sivakumar-8921253a9/" target="_blank" class="icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sabareesh Sivakumar | Oasis Internship Project</p>
+  </footer>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProject()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p><strong>Technologies:</strong> <span id="modalTech"></span></p>
+      <a id="modalLink" href="#" target="_blank" class="btn">View on GitHub</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
